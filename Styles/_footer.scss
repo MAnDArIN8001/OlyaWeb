@@ -1,0 +1,64 @@
+footer {
+  margin-top: 10vh;
+
+  border-top: 2px solid #d99414;
+}
+
+.footer {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+
+  height: 10vh;
+
+  color: #d99414;
+
+  & img {
+    transition: 0.3s;
+
+    height: 6vh;
+
+    cursor: pointer;
+
+    &:is(:hover, :focus) {
+      transition: 0.3s;
+
+      scale: 1.1;
+      fill: #fff;
+    }
+  }
+
+  & a {
+    transition: 0.3s;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    text-decoration: none;
+    color: #d99414;
+
+    cursor: pointer;
+
+    &:is(:hover, :focus) {
+      transition: 0.3s;
+
+      scale: 1.05;
+      color: #fff;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+
+  gap: 2vw;
+}

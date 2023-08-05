@@ -1,0 +1,361 @@
+@import 'header';
+@import 'mains';
+@import 'footer';
+@import 'burger';
+
+* {
+  font-family: 'Open Sans';
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body.opened {
+  overflow-y: hidden;
+}
+
+html {
+  background: #232323;
+}
+
+body {
+  background: #232323;
+  background: linear-gradient(
+      225deg,
+      rgba(217, 148, 20, 1) 10%,
+      rgba(38, 38, 38, 1) 36%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(38, 38, 38, 1) 36%,
+      rgba(217, 148, 20, 1) 10%
+    );
+
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 80vw;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../Fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@media (min-width: 1000px) and (max-width: 1210px) {
+  header {
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  header {
+    background-position: 0 0;
+  }
+
+  .header_container nav .menu {
+    width: 42vw;
+  }
+
+  .content_info h1 {
+    font-size: 2.5em;
+  }
+
+  .more_btn {
+    width: 14vw;
+  }
+
+  .container {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  header {
+    background-position: 0 0;
+  }
+
+  .header_container nav .menu {
+    width: 50vw;
+  }
+
+  .content_info {
+    gap: 3vh;
+  }
+
+  .content_info h1 {
+    font-size: 2em;
+  }
+
+  .content_info h3 {
+    font-size: 1.1em;
+  }
+
+  .more_btn {
+    width: 18vw;
+  }
+
+  .container {
+    width: 94vw;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  header {
+    background-position: 0 0;
+  }
+
+  body {
+    background: linear-gradient(
+        225deg,
+        rgba(217, 148, 20, 1) 10%,
+        rgba(38, 38, 38, 1) 26%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(38, 38, 38, 1) 36%,
+        rgba(217, 148, 20, 1) 10%
+      );
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header_container nav .menu {
+    display: none;
+  }
+
+  .consultations {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards .card {
+    height: 14vh;
+  }
+
+  .consultation {
+    width: 90%;
+
+    margin-top: 4vh;
+
+    &:hover {
+      scale: 1.01;
+    }
+  }
+
+  .instalation img {
+    position: absolute;
+
+    margin: 0 30vw;
+
+    z-index: 0;
+
+    width: 40vw;
+  }
+
+  .info {
+    background: #23232362;
+
+    backdrop-filter: blur(6px);
+
+    width: 100%;
+
+    z-index: 1;
+
+    &:hover {
+      scale: 1.01;
+    }
+  }
+
+  .consultation_btn {
+    width: 24vw;
+  }
+
+  .header_container nav .menu {
+    width: 50vw;
+  }
+
+  .content_info {
+    gap: 3vh;
+
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .content_info h1 {
+    font-size: 3em;
+
+    text-align: center;
+  }
+
+  .content_info h3 {
+    font-size: 1.5em;
+
+    text-align: center;
+  }
+
+  .more_btn {
+    width: 54vw;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .container {
+    width: 94vw;
+  }
+
+  .cards .card {
+    width: 48%;
+  }
+
+  .order_btn {
+    width: 24vw;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  header {
+    background-position-x: 50%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .instalation {
+    position: relative;
+  }
+
+  .about_us {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+  header {
+    background-position-x: 50%;
+  }
+
+  body {
+    background: linear-gradient(
+        225deg,
+        rgba(217, 148, 20, 1) 10%,
+        rgba(38, 38, 38, 1) 26%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(38, 38, 38, 1) 36%,
+        rgba(217, 148, 20, 1) 10%
+      );
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header_container nav .menu {
+    display: none;
+  }
+
+  .consultations {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards .card {
+    height: 14vh;
+  }
+
+  .consultation {
+    width: 90%;
+
+    margin-top: 4vh;
+
+    &:hover {
+      scale: 1.01;
+    }
+  }
+
+  .instalation img {
+    position: absolute;
+
+    margin: 0 30vw;
+
+    z-index: 0;
+
+    width: 40vw;
+  }
+
+  .info {
+    background: #23232362;
+
+    backdrop-filter: blur(6px);
+
+    width: 100%;
+
+    z-index: 1;
+
+    &:hover {
+      scale: 1.01;
+    }
+  }
+
+  .consultation_btn {
+    width: 24vw;
+  }
+
+  .header_container nav .menu {
+    width: 50vw;
+  }
+
+  .content_info {
+    gap: 3vh;
+
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .content_info h1 {
+    font-size: 2.2em;
+
+    text-align: center;
+  }
+
+  .content_info h3 {
+    font-size: 1.1em;
+
+    text-align: center;
+  }
+
+  .more_btn {
+    width: 74vw;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .container {
+    width: 90vw;
+  }
+
+  .cards .card {
+    width: 48%;
+  }
+
+  .order_btn {
+    width: 24vw;
+  }
+}
